@@ -2,6 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export default function App() {
+  const applicationFormLink =
+    "https://forms.office.com/Pages/ResponsePage.aspx?id=eqFaGYmldk2OpiMe3gvlp7LfNyYIb-lBmSRYdmG4HIlUQzlMWTRIODFKTk80RjZKRDg4RFBXMFJRTC4u";
+
   const services = [
     {
       title: "Project Management",
@@ -25,28 +28,7 @@ export default function App() {
     },
   ];
 
-  const portfolioItems = [
-    {
-      title: "Project Management",
-      description:
-        "Structured oversight from pre-construction through project completion.",
-    },
-    {
-      title: "Project Administration",
-      description:
-        "Documentation, reporting, scheduling support, coordination, and communication management that keep projects organized and moving.",
-    },
-    {
-      title: "Construction Management",
-      description:
-        "Practical field-focused management to support quality execution, schedule discipline, site accountability, and smooth delivery.",
-    },
-    {
-      title: "Construction Inspection",
-      description:
-        "Inspection support designed to help verify workmanship, compliance expectations, construction standards, and project quality.",
-    },
-  ];
+  const portfolioItems = services;
 
   const jobOpenings = [
     {
@@ -562,11 +544,9 @@ export default function App() {
 
                 <a
                   className="btn-primary"
-                  href={`mailto:EDodd@edoddconsulting.com?subject=Application - ${encodeURIComponent(
-                    job.title
-                  )}&body=Full Name:%0D%0APhone Number:%0D%0AEmail:%0D%0APosition Applying For: ${encodeURIComponent(
-                    job.title
-                  )}%0D%0AYears of Experience:%0D%0ACertifications:%0D%0AWhy are you interested in this role?:%0D%0APlease attach your resume before sending.`}
+                  href={applicationFormLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Apply for this Role
                 </a>
@@ -590,11 +570,13 @@ export default function App() {
           <div className="panel">
             <h3>Resume Submission</h3>
             <p className="section-text">
-              Please email your resume and a brief introduction using the button below.
+              Please submit your resume and brief application using the button below.
             </p>
             <a
               className="btn-primary"
-              href="mailto:EDodd@edoddconsulting.com?subject=Resume Submission - Dodd Consulting Enterprises&body=Full Name:%0D%0APhone Number:%0D%0AEmail:%0D%0AType of Role Interested In:%0D%0AYears of Experience:%0D%0ACertifications:%0D%0APlease attach your resume before sending."
+              href={applicationFormLink}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Submit Resume
             </a>
