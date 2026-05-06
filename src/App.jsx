@@ -28,7 +28,38 @@ export default function App() {
     },
   ];
 
-  const portfolioItems = services;
+  const portfolioItems = [
+  {
+    title: "Owner’s Representation & Redevelopment Support",
+    description:
+      "Submitted qualifications for an Owner’s Representation Contractor Pool, highlighting owner advocacy, project oversight, risk management, procurement support, and closeout coordination for complex redevelopment projects.",
+  },
+  {
+    title: "Multibillion-Dollar Pharmaceutical Manufacturing Program",
+    description:
+      "Provided day-to-day project management support for a major pharmaceutical manufacturing expansion, coordinating EPC partners, trade contractors, engineering teams, schedule control, field issue resolution, quality oversight, and turnover readiness.",
+  },
+  {
+    title: "$350M Gainbridge Fieldhouse Renovation Experience",
+    description:
+      "Supported successful delivery experience connected to a major landmark renovation project, demonstrating construction management, owner coordination, schedule awareness, and high-stakes project delivery capability.",
+  },
+  {
+    title: "City of Indianapolis Rebuild Indy Program",
+    description:
+      "Managed design, inspection, and construction management responsibilities for multiple concurrent multimillion-dollar city infrastructure projects, including submittals, RFIs, budgets, pay applications, and project changes.",
+  },
+  {
+    title: "Local Utility & Public Infrastructure Oversight",
+    description:
+      "Provided engineering oversight and construction inspection support for municipal transportation, water, and power infrastructure programs with emphasis on technical compliance, safety codes, documentation, and field coordination.",
+  },
+  {
+    title: "Supply Chain & Cost Savings Program",
+    description:
+      "Led vendor engagement, sourcing, procurement strategy, RFP execution, and contract negotiation efforts, including implementation of a fleet tolling solution that generated approximately $100,000 in first-year savings.",
+  },
+];
 
   const jobOpenings = [
     {
